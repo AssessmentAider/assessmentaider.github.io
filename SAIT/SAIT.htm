@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>[學生適應調查表] 評量結果計算</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="SAIT.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="SAIT_Data.js"></script>
+    <script type="text/javascript" src="SAIT_UI.js"></script>
+
+</head>
+<body>
+
+    <p>
+        身分：
+        <select id="IdentitySelect" onchange="Update();">
+            <option value="0">教師</option>
+            <option value="1">家長</option>
+        </select>
+    </p>
+    
+    <p>
+        性別：
+        <select id="GenderSelect">
+            <option value="0">女生</option>
+            <option value="1">男生</option>
+        </select>
+    </p>
+
+    <p>
+        年級區段：
+        <select id="GradeSelect">
+            <option value="0">年段一 (小一 ~ 小三)</option>
+            <option value="1">年段二 (小四 ~ 小六)</option>
+            <option value="2">年段三 (國一 ~ 國三)</option>
+        </select>
+    </p>
+
+    <table cellspacing="0" cellpadding="2" id="table_1" class="common list">
+        <thead>
+            <tr>
+                <td>行為</td>
+                <td>等級</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="result_wrapper" class="fixed">
+
+        <table width="400" id="table_result" class="common list">
+            <thead>
+                <tr>
+                    <th colspan="6" class="anytime">向度</th>
+                    <td rowspan="2" class="anytime">總分</td>
+                    <td rowspan="2" class="anytime">適應<br>商數</td>
+                </tr>
+                <tr>
+                    <th>分量表</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>原始分數</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="3" class="AdaptabilityQuotient"></td>
+                </tr>
+                <tr>
+                    <th>百分等級</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>達PR25以下</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table width="400" id="table_result_2" class="common list">
+            <thead>
+                <tr>
+                    <th class="anytime">量表代號</th>
+                    <td class="anytime">原始分數</td>
+                    <td class="anytime">標準分數</td>
+                    <td class="anytime">百分等級</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>總分</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>適應商數</th>
+                    <td colspan="3" class="AdaptabilityQuotient"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="0" width="400" id="buttons"  class="common">
+            <tr>
+                <td><input type="button" value="計算" onclick="Calculate();"></td>
+                <td><input type="button" value="修改" onclick="Modify();"></td>
+                <td><input type="button" value="全部清除" onclick="Clear();"></td>
+            </tr>
+        </table>
+    
+    </div>
+
+</body>
+</html>

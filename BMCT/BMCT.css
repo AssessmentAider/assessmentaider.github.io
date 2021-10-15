@@ -1,0 +1,22 @@
+
+/* 表格共同部分 */
+.common th {width: 150px;}
+.common td {width: 80px;}
+.common thead {background-color: #808080; color: #FFFFFF; text-align: center; font-weight: bold;}
+.common thead .colspan3 {width: 150px;}
+.common thead th {border: 1px solid #FFFFFF;}
+.common thead td {border: 1px solid #FFFFFF;}
+.common tbody th {text-align: left;}
+.common tbody td {text-align: center;}
+
+/* 表格隨著滑鼠移動有變色效果、底虛線 */
+.list tbody tr:hover {background-color: #FFEFD5;}
+.list tbody th {border-bottom: 1px dashed #000000;}
+.list tbody td {border-bottom: 1px dashed #000000;}
+
+input[type='text'] {width: 70px; text-align: right;}
+.explain {width: 150px;}
+
+tr.disabled > td, tr.disabled > th {
+    background-color: #EBEBE4;
+}

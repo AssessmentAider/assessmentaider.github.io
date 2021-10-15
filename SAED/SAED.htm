@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>[情緒障礙量表] 評量結果計算</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="SAED.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="SAED_Data.js"></script>
+    <script type="text/javascript" src="SAED_UI.js"></script>
+</head>
+<body>
+
+    實足年齡：
+    <select id="TableSelect">
+        <option value="1"> 5y0m ~ 11y11m</option>
+        <option value="2">12y0m ~ 14y11m</option>
+        <option value="3">15y0m ~ 18y11m</option>
+    </select>
+
+    <p>第一部份：學生能力特徵：整體能力</p>
+
+    <table cellspacing="0" cellpadding="2" id="table1" class="common list">
+        <thead>
+            <tr>
+                <th>學生的表現</th>
+                <td>很好</td>
+                <td>好</td>
+                <td>普通</td>
+                <td>差</td>
+                <td>很差</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1. 智......現</th>
+                <td><input type="radio" name="R01" value="4"></td>
+                <td><input type="radio" name="R01" value="3"></td>
+                <td><input type="radio" name="R01" value="2"></td>
+                <td><input type="radio" name="R01" value="1"></td>
+                <td><input type="radio" name="R01" value="0"></td>
+            </tr>
+            <tr>
+                <th>2. 家......度</th>
+                <td><input type="radio" name="R02" value="4"></td>
+                <td><input type="radio" name="R02" value="3"></td>
+                <td><input type="radio" name="R02" value="2"></td>
+                <td><input type="radio" name="R02" value="1"></td>
+                <td><input type="radio" name="R02" value="0"></td>
+            </tr>
+            <tr>
+                <th>3. 學......現</th>
+                <td><input type="radio" name="R03" value="4"></td>
+                <td><input type="radio" name="R03" value="3"></td>
+                <td><input type="radio" name="R03" value="2"></td>
+                <td><input type="radio" name="R03" value="1"></td>
+                <td><input type="radio" name="R03" value="0"></td>
+            </tr>
+            <tr>
+                <th>4. 學......機</th>
+                <td><input type="radio" name="R04" value="4"></td>
+                <td><input type="radio" name="R04" value="3"></td>
+                <td><input type="radio" name="R04" value="2"></td>
+                <td><input type="radio" name="R04" value="1"></td>
+                <td><input type="radio" name="R04" value="0"></td>
+            </tr>
+            <tr>
+                <th>5. 同......度</th>
+                <td><input type="radio" name="R05" value="4"></td>
+                <td><input type="radio" name="R05" value="3"></td>
+                <td><input type="radio" name="R05" value="2"></td>
+                <td><input type="radio" name="R05" value="1"></td>
+                <td><input type="radio" name="R05" value="0"></td>
+            </tr>
+            <tr>
+                <th>6. 個......）</th>
+                <td><input type="radio" name="R06" value="4"></td>
+                <td><input type="radio" name="R06" value="3"></td>
+                <td><input type="radio" name="R06" value="2"></td>
+                <td><input type="radio" name="R06" value="1"></td>
+                <td><input type="radio" name="R06" value="0"></td>
+            </tr>
+            <tr>
+                <th>7. 校......趣</th>
+                <td><input type="radio" name="R07" value="4"></td>
+                <td><input type="radio" name="R07" value="3"></td>
+                <td><input type="radio" name="R07" value="2"></td>
+                <td><input type="radio" name="R07" value="1"></td>
+                <td><input type="radio" name="R07" value="0"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>第二部份：學生的情緒與行為問題</p>
+
+    <table cellspacing="0" cellpadding="2" id="table2" class="common list">
+        <thead>
+            <tr>
+                <th>學生的表現</th>
+                <td>沒有<br>問題</td>
+                <td>問題<br>輕微</td>
+                <td>問題<br>顯著</td>
+                <td>問題<br>嚴重</td>
+                <td>障礙<br>特徵</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>8. 抱......適</th>
+                <td><input type="radio" name="R08" value="0"></td>
+                <td><input type="radio" name="R08" value="1"></td>
+                <td><input type="radio" name="R08" value="2"></td>
+                <td><input type="radio" name="R08" value="3"></td>
+                <td>PF</td>
+            </tr>
+            <tr>
+                <th>9. 寫......）</th>
+                <td><input type="radio" name="R09" value="0"></td>
+                <td><input type="radio" name="R09" value="1"></td>
+                <td><input type="radio" name="R09" value="2"></td>
+                <td><input type="radio" name="R09" value="3"></td>
+                <td>IL</td>
+            </tr>
+            <tr>
+                <th>10. 不......威</th>
+                <td><input type="radio" name="R10" value="0"></td>
+                <td><input type="radio" name="R10" value="1"></td>
+                <td><input type="radio" name="R10" value="2"></td>
+                <td><input type="radio" name="R10" value="3"></td>
+                <td>IB</td>
+            </tr>
+            <tr>
+                <th>11. 對......為</th>
+                <td><input type="radio" name="R11" value="0"></td>
+                <td><input type="radio" name="R11" value="1"></td>
+                <td><input type="radio" name="R11" value="2"></td>
+                <td><input type="radio" name="R11" value="3"></td>
+                <td>IB</td>
+            </tr>
+            <tr>
+                <th>12. 很......友</th>
+                <td><input type="radio" name="R12" value="0"></td>
+                <td><input type="radio" name="R12" value="1"></td>
+                <td><input type="radio" name="R12" value="2"></td>
+                <td><input type="radio" name="R12" value="3"></td>
+                <td>RP</td>
+            </tr>
+            <tr>
+                <th>13. 在......佳</th>
+                <td><input type="radio" name="R13" value="0"></td>
+                <td><input type="radio" name="R13" value="1"></td>
+                <td><input type="radio" name="R13" value="2"></td>
+                <td><input type="radio" name="R13" value="3"></td>
+                <td>RP</td>
+            </tr>
+            <tr>
+                <th>14. 焦......張</th>
+                <td><input type="radio" name="R14" value="0"></td>
+                <td><input type="radio" name="R14" value="1"></td>
+                <td><input type="radio" name="R14" value="2"></td>
+                <td><input type="radio" name="R14" value="3"></td>
+                <td>PF</td>
+            </tr>
+            <tr>
+                <th>15. 口......人</th>
+                <td><input type="radio" name="R15" value="0"></td>
+                <td><input type="radio" name="R15" value="1"></td>
+                <td><input type="radio" name="R15" value="2"></td>
+                <td><input type="radio" name="R15" value="3"></td>
+                <td>IB</td>
+            </tr>
+            <tr>
+                <th>16. 對......慮</th>
+                <td><input type="radio" name="R16" value="0"></td>
+                <td><input type="radio" name="R16" value="1"></td>
+                <td><input type="radio" name="R16" value="2"></td>
+                <td><input type="radio" name="R16" value="3"></td>
+                <td>IB</td>
+            </tr>
+            <tr>
+                <th>17. 破......物</th>
+                <td><input type="radio" name="R17" value="0"></td>
+                <td><input type="radio" name="R17" value="1"></td>
+                <td><input type="radio" name="R17" value="2"></td>
+                <td><input type="radio" name="R17" value="3"></td>
+                <td>SM</td>
+            </tr>
+            <tr>
+                <th>18. 上......佳</th>
+                <td><input type="radio" name="R18" value="0"></td>
+                <td><input type="radio" name="R18" value="1"></td>
+                <td><input type="radio" name="R18" value="2"></td>
+                <td><input type="radio" name="R18" value="3"></td>
+                <td>IL</td>
+            </tr>
+            <tr>
+                <th>19. 擔......難</th>
+                <td><input type="radio" name="R19" value="0"></td>
+                <td><input type="radio" name="R19" value="1"></td>
+                <td><input type="radio" name="R19" value="2"></td>
+                <td><input type="radio" name="R19" value="3"></td>
+                <td>PF</td>
+            </tr>
+            <tr>
+                <th>20. 欺......竊</th>
+                <td><input type="radio" name="R20" value="0"></td>
+                <td><input type="radio" name="R20" value="1"></td>
+                <td><input type="radio" name="R20" value="2"></td>
+                <td><input type="radio" name="R20" value="3"></td>
+                <td>IB</td>
+            </tr>
+            <tr>
+                <th>21. 缺......信</th>
+                <td><input type="radio" name="R21" value="0"></td>
+                <td><input type="radio" name="R21" value="1"></td>
+                <td><input type="radio" name="R21" value="2"></td>
+                <td><input type="radio" name="R21" value="3"></td>
+                <td>UD</td>
+            </tr>
+            <tr>
+                <th>22. 參......動</th>
+                <td><input type="radio" name="R22" value="0"></td>
+                <td><input type="radio" name="R22" value="1"></td>
+                <td><input type="radio" name="R22" value="2"></td>
+                <td><input type="radio" name="R22" value="3"></td>
+                <td>SM</td>
+            </tr>
+            <tr>
+                <th>23. 感......感</th>
+                <td><input type="radio" name="R23" value="0"></td>
+                <td><input type="radio" name="R23" value="1"></td>
+                <td><input type="radio" name="R23" value="2"></td>
+                <td><input type="radio" name="R23" value="3"></td>
+                <td>UD</td>
+            </tr>
+            <tr>
+                <th>24. 被......絕</th>
+                <td><input type="radio" name="R24" value="0"></td>
+                <td><input type="radio" name="R24" value="1"></td>
+                <td><input type="radio" name="R24" value="2"></td>
+                <td><input type="radio" name="R24" value="3"></td>
+                <td>RP</td>
+            </tr>
+            <tr>
+                <th>25. 威......人</th>
+                <td><input type="radio" name="R25" value="0"></td>
+                <td><input type="radio" name="R25" value="1"></td>
+                <td><input type="radio" name="R25" value="2"></td>
+                <td><input type="radio" name="R25" value="3"></td>
+                <td>IB</td>
+            </tr>
+            <tr>
+                <th>26. 無......課</th>
+                <td><input type="radio" name="R26" value="0"></td>
+                <td><input type="radio" name="R26" value="1"></td>
+                <td><input type="radio" name="R26" value="2"></td>
+                <td><input type="radio" name="R26" value="3"></td>
+                <td>IL</td>
+            </tr>
+            <tr>
+                <th>27. 做......佳</th>
+                <td><input type="radio" name="R27" value="0"></td>
+                <td><input type="radio" name="R27" value="1"></td>
+                <td><input type="radio" name="R27" value="2"></td>
+                <td><input type="radio" name="R27" value="3"></td>
+                <td>IL</td>
+            </tr>
+            <tr>
+                <th>28. 很......樂</th>
+                <td><input type="radio" name="R28" value="0"></td>
+                <td><input type="radio" name="R28" value="1"></td>
+                <td><input type="radio" name="R28" value="2"></td>
+                <td><input type="radio" name="R28" value="3"></td>
+                <td>UD</td>
+            </tr>
+            <tr>
+                <th>29. 無......暴</th>
+                <td><input type="radio" name="R29" value="0"></td>
+                <td><input type="radio" name="R29" value="1"></td>
+                <td><input type="radio" name="R29" value="2"></td>
+                <td><input type="radio" name="R29" value="3"></td>
+                <td>IB</td>
+            </tr>
+            <tr>
+                <th>30. 會......亡</th>
+                <td><input type="radio" name="R30" value="0"></td>
+                <td><input type="radio" name="R30" value="1"></td>
+                <td><input type="radio" name="R30" value="2"></td>
+                <td><input type="radio" name="R30" value="3"></td>
+                <td>PF</td>
+            </tr>
+            <tr>
+                <th>31. 大......笑</th>
+                <td><input type="radio" name="R31" value="0"></td>
+                <td><input type="radio" name="R31" value="1"></td>
+                <td><input type="radio" name="R31" value="2"></td>
+                <td><input type="radio" name="R31" value="3"></td>
+                <td>UD</td>
+            </tr>
+            <tr>
+                <th>32. 覺......他</th>
+                <td><input type="radio" name="R32" value="0"></td>
+                <td><input type="radio" name="R32" value="1"></td>
+                <td><input type="radio" name="R32" value="2"></td>
+                <td><input type="radio" name="R32" value="3"></td>
+                <td>RP</td>
+            </tr>
+            <tr>
+                <th>33. 破......西</th>
+                <td><input type="radio" name="R33" value="0"></td>
+                <td><input type="radio" name="R33" value="1"></td>
+                <td><input type="radio" name="R33" value="2"></td>
+                <td><input type="radio" name="R33" value="3"></td>
+                <td>IB</td>
+            </tr>
+            <tr>
+                <th>34. 分......心</th>
+                <td><input type="radio" name="R34" value="0"></td>
+                <td><input type="radio" name="R34" value="1"></td>
+                <td><input type="radio" name="R34" value="2"></td>
+                <td><input type="radio" name="R34" value="3"></td>
+                <td>IL</td>
+            </tr>
+            <tr>
+                <th>35. 數......差</th>
+                <td><input type="radio" name="R35" value="0"></td>
+                <td><input type="radio" name="R35" value="1"></td>
+                <td><input type="radio" name="R35" value="2"></td>
+                <td><input type="radio" name="R35" value="3"></td>
+                <td>IL</td>
+            </tr>
+            <tr>
+                <th>36. 與......有</th>
+                <td><input type="radio" name="R36" value="0"></td>
+                <td><input type="radio" name="R36" value="1"></td>
+                <td><input type="radio" name="R36" value="2"></td>
+                <td><input type="radio" name="R36" value="3"></td>
+                <td>UD</td>
+            </tr>
+            <tr>
+                <th>37. 對......度</th>
+                <td><input type="radio" name="R37" value="0"></td>
+                <td><input type="radio" name="R37" value="1"></td>
+                <td><input type="radio" name="R37" value="2"></td>
+                <td><input type="radio" name="R37" value="3"></td>
+                <td>IL</td>
+            </tr>
+            <tr>
+                <th>38. 可......感</th>
+                <td><input type="radio" name="R38" value="0"></td>
+                <td><input type="radio" name="R38" value="1"></td>
+                <td><input type="radio" name="R38" value="2"></td>
+                <td><input type="radio" name="R38" value="3"></td>
+                <td>PF</td>
+            </tr>
+            <tr>
+                <th>39. 感......感</th>
+                <td><input type="radio" name="R39" value="0"></td>
+                <td><input type="radio" name="R39" value="1"></td>
+                <td><input type="radio" name="R39" value="2"></td>
+                <td><input type="radio" name="R39" value="3"></td>
+                <td>PF</td>
+            </tr>
+            <tr>
+                <th>40. 在......人</th>
+                <td><input type="radio" name="R40" value="0"></td>
+                <td><input type="radio" name="R40" value="1"></td>
+                <td><input type="radio" name="R40" value="2"></td>
+                <td><input type="radio" name="R40" value="3"></td>
+                <td>IB</td>
+            </tr>
+            <tr>
+                <th>41. 神......）</th>
+                <td><input type="radio" name="R41" value="0"></td>
+                <td><input type="radio" name="R41" value="1"></td>
+                <td><input type="radio" name="R41" value="2"></td>
+                <td><input type="radio" name="R41" value="3"></td>
+                <td>PF</td>
+            </tr>
+            <tr>
+                <th>42. 非......酒</th>
+                <td><input type="radio" name="R42" value="0"></td>
+                <td><input type="radio" name="R42" value="1"></td>
+                <td><input type="radio" name="R42" value="2"></td>
+                <td><input type="radio" name="R42" value="3"></td>
+                <td>SM</td>
+            </tr>
+            <tr>
+                <th>43. 閱......差</th>
+                <td><input type="radio" name="R43" value="0"></td>
+                <td><input type="radio" name="R43" value="1"></td>
+                <td><input type="radio" name="R43" value="2"></td>
+                <td><input type="radio" name="R43" value="3"></td>
+                <td>IL</td>
+            </tr>
+            <tr>
+                <th>44. 自......）</th>
+                <td><input type="radio" name="R44" value="0"></td>
+                <td><input type="radio" name="R44" value="1"></td>
+                <td><input type="radio" name="R44" value="2"></td>
+                <td><input type="radio" name="R44" value="3"></td>
+                <td>PF</td>
+            </tr>
+            <tr>
+                <th>45. 表......為</th>
+                <td><input type="radio" name="R45" value="0"></td>
+                <td><input type="radio" name="R45" value="1"></td>
+                <td><input type="radio" name="R45" value="2"></td>
+                <td><input type="radio" name="R45" value="3"></td>
+                <td>SM</td>
+            </tr>
+            <tr>
+                <th>46. 缺......力</th>
+                <td><input type="radio" name="R46" value="0"></td>
+                <td><input type="radio" name="R46" value="1"></td>
+                <td><input type="radio" name="R46" value="2"></td>
+                <td><input type="radio" name="R46" value="3"></td>
+                <td>RP</td>
+            </tr>
+            <tr>
+                <th>47. 對......趣</th>
+                <td><input type="radio" name="R47" value="0"></td>
+                <td><input type="radio" name="R47" value="1"></td>
+                <td><input type="radio" name="R47" value="2"></td>
+                <td><input type="radio" name="R47" value="3"></td>
+                <td>UD</td>
+            </tr>
+            <tr>
+                <th>48. 蹺......家</th>
+                <td><input type="radio" name="R48" value="0"></td>
+                <td><input type="radio" name="R48" value="1"></td>
+                <td><input type="radio" name="R48" value="2"></td>
+                <td><input type="radio" name="R48" value="3"></td>
+                <td>SM</td>
+            </tr>
+            <tr>
+                <th>49. 使......言</th>
+                <td><input type="radio" name="R49" value="0"></td>
+                <td><input type="radio" name="R49" value="1"></td>
+                <td><input type="radio" name="R49" value="2"></td>
+                <td><input type="radio" name="R49" value="3"></td>
+                <td>IB</td>
+            </tr>
+            <tr>
+                <th>50. 避......動</th>
+                <td><input type="radio" name="R50" value="0"></td>
+                <td><input type="radio" name="R50" value="1"></td>
+                <td><input type="radio" name="R50" value="2"></td>
+                <td><input type="radio" name="R50" value="3"></td>
+                <td>RP</td>
+            </tr>
+                <th>51. 在......為</th>
+                <td><input type="radio" name="R51" value="0"></td>
+                <td><input type="radio" name="R51" value="1"></td>
+                <td><input type="radio" name="R51" value="2"></td>
+                <td><input type="radio" name="R51" value="3"></td>
+                <td>SM</td>
+            </tr>
+                <th>52. 對......望</th>
+                <td><input type="radio" name="R52" value="0"></td>
+                <td><input type="radio" name="R52" value="1"></td>
+                <td><input type="radio" name="R52" value="2"></td>
+                <td><input type="radio" name="R52" value="3"></td>
+                <td>UD</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div id="result_wrapper" class="fixed">
+
+        <table width="400" id="table_result" class="common list">
+            <thead>
+                <tr>
+                    <th>障礙特徵</th>
+                    <td>原始<br>分數</td>
+                    <td>百分<br>等級</td>
+                    <td>標準<br>分數</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>(a) 無能力學習 (IL)</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>(b) 人際關係問題 (RP)</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>(c) 不當行為 (IB)</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>(d) 不快樂或沮喪 (UD)</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th style="border-bottom: 1px solid #000000;">(e) 生理症狀或害怕 (PF)</th>
+                    <td style="border-bottom: 1px solid #000000;"></td>
+                    <td style="border-bottom: 1px solid #000000;"></td>
+                    <td style="border-bottom: 1px solid #000000;"></td>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-bottom: 0px;">標準分數總和 (IL, RP, IB, UD, PF)</th>
+                    <td style="border-bottom: 0px;"></td>
+                </tr>
+                <tr>
+                    <th colspan="2" style="border-bottom: 1px solid #000000;">情緒障礙商數</th>
+                    <td style="border-bottom: 1px solid #000000;"></td>
+                    <td style="border-style:solid; border-width:1px; "></td>
+                </tr>
+                <tr>
+                    <th>整體能力 (OC)</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>社會失調 (SM)</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="0" width="400" id="buttons"  class="common">
+            <tr>
+                <td><input type="button" value="計算" onclick="Calculate();"></td>
+                <td><input type="button" value="修改" onclick="Modify();"></td>
+                <td><input type="button" value="全部清除" onclick="Clear();"></td>
+                <td><input type="button" value="說明" onclick="Explanation();"></td>
+            </tr>
+        </table>
+    
+    </div>
+
+</body>
+</html>

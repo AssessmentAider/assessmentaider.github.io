@@ -1,0 +1,758 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>[性格及行為量表] 評量結果計算</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="SAPB.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="SAPB_Data.js"></script>
+    <script type="text/javascript" src="SAPB_UI.js"></script>
+</head>
+<body>
+
+    對象：
+    <select id="ObjectSelect">
+        <option value="E0">國小女生</option>
+        <option value="E1">國小男生</option>
+        <option value="J0">國中女生</option>
+        <option value="J1">國中男生</option>
+    </select>
+
+    <p>一、人際關係問題</p>
+
+    <table cellspacing="0" cellpadding="2" id="table_RP" class="common list">
+        <thead>
+            <tr>
+                <th rowspan="2">行為</th>
+                <td colspan="3" class="colspan3">發生次數</td>
+                <td colspan="3" class="colspan3">嚴重程度</td>
+            </tr>
+            <tr>
+                <td>無</td>
+                <td>偶爾</td>
+                <td>經常</td>
+                <td>輕微</td>
+                <td>中度</td>
+                <td>嚴重</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1. 和......）</th>
+                <td><input type="radio" name="F01" value="1"></td>
+                <td><input type="radio" name="F01" value="2"></td>
+                <td><input type="radio" name="F01" value="3"></td>
+                <td><input type="radio" name="S01" value="2"></td>
+                <td><input type="radio" name="S01" value="3"></td>
+                <td><input type="radio" name="S01" value="4"></td>
+            </tr>
+            <tr>
+                <th>2. 會......人</th>
+                <td><input type="radio" name="F02" value="1"></td>
+                <td><input type="radio" name="F02" value="2"></td>
+                <td><input type="radio" name="F02" value="3"></td>
+                <td><input type="radio" name="S02" value="2"></td>
+                <td><input type="radio" name="S02" value="3"></td>
+                <td><input type="radio" name="S02" value="4"></td>
+            </tr>
+            <tr>
+                <th>3. 易......使</th>
+                <td><input type="radio" name="F03" value="1"></td>
+                <td><input type="radio" name="F03" value="2"></td>
+                <td><input type="radio" name="F03" value="3"></td>
+                <td><input type="radio" name="S03" value="2"></td>
+                <td><input type="radio" name="S03" value="3"></td>
+                <td><input type="radio" name="S03" value="4"></td>
+            </tr>
+            <tr>
+                <th>4. 喜......友</th>
+                <td><input type="radio" name="F04" value="1"></td>
+                <td><input type="radio" name="F04" value="2"></td>
+                <td><input type="radio" name="F04" value="3"></td>
+                <td><input type="radio" name="S04" value="2"></td>
+                <td><input type="radio" name="S04" value="3"></td>
+                <td><input type="radio" name="S04" value="4"></td>
+            </tr>
+            <tr>
+                <th>5. 不......西</th>
+                <td><input type="radio" name="F05" value="1"></td>
+                <td><input type="radio" name="F05" value="2"></td>
+                <td><input type="radio" name="F05" value="3"></td>
+                <td><input type="radio" name="S05" value="2"></td>
+                <td><input type="radio" name="S05" value="3"></td>
+                <td><input type="radio" name="S05" value="4"></td>
+            </tr>
+            <tr>
+                <th>6. 不......戲</th>
+                <td><input type="radio" name="F06" value="1"></td>
+                <td><input type="radio" name="F06" value="2"></td>
+                <td><input type="radio" name="F06" value="3"></td>
+                <td><input type="radio" name="S06" value="2"></td>
+                <td><input type="radio" name="S06" value="3"></td>
+                <td><input type="radio" name="S06" value="4"></td>
+            </tr>
+            <tr>
+                <th>7. 以......）</th>
+                <td><input type="radio" name="F07" value="1"></td>
+                <td><input type="radio" name="F07" value="2"></td>
+                <td><input type="radio" name="F07" value="3"></td>
+                <td><input type="radio" name="S07" value="2"></td>
+                <td><input type="radio" name="S07" value="3"></td>
+                <td><input type="radio" name="S07" value="4"></td>
+            </tr>
+            <tr>
+                <th>8. 突......躁</th>
+                <td><input type="radio" name="F08" value="1"></td>
+                <td><input type="radio" name="F08" value="2"></td>
+                <td><input type="radio" name="F08" value="3"></td>
+                <td><input type="radio" name="S08" value="2"></td>
+                <td><input type="radio" name="S08" value="3"></td>
+                <td><input type="radio" name="S08" value="4"></td>
+            </tr>
+            <tr>
+                <th>9. 對......）</th>
+                <td><input type="radio" name="F09" value="1"></td>
+                <td><input type="radio" name="F09" value="2"></td>
+                <td><input type="radio" name="F09" value="3"></td>
+                <td><input type="radio" name="S09" value="2"></td>
+                <td><input type="radio" name="S09" value="3"></td>
+                <td><input type="radio" name="S09" value="4"></td>
+            </tr>
+            <tr>
+                <th>10. 不......）</th>
+                <td><input type="radio" name="F10" value="1"></td>
+                <td><input type="radio" name="F10" value="2"></td>
+                <td><input type="radio" name="F10" value="3"></td>
+                <td><input type="radio" name="S10" value="2"></td>
+                <td><input type="radio" name="S10" value="3"></td>
+                <td><input type="radio" name="S10" value="4"></td>
+            </tr>
+            <tr>
+                <th>11. 不......）</th>
+                <td><input type="radio" name="F11" value="1"></td>
+                <td><input type="radio" name="F11" value="2"></td>
+                <td><input type="radio" name="F11" value="3"></td>
+                <td><input type="radio" name="S11" value="2"></td>
+                <td><input type="radio" name="S11" value="3"></td>
+                <td><input type="radio" name="S11" value="4"></td>
+            </tr>
+            <tr>
+                <th>12. 不......）</th>
+                <td><input type="radio" name="F12" value="1"></td>
+                <td><input type="radio" name="F12" value="2"></td>
+                <td><input type="radio" name="F12" value="3"></td>
+                <td><input type="radio" name="S12" value="2"></td>
+                <td><input type="radio" name="S12" value="3"></td>
+                <td><input type="radio" name="S12" value="4"></td>
+            </tr>
+            <tr>
+                <th>13. 不......）</th>
+                <td><input type="radio" name="F13" value="1"></td>
+                <td><input type="radio" name="F13" value="2"></td>
+                <td><input type="radio" name="F13" value="3"></td>
+                <td><input type="radio" name="S13" value="2"></td>
+                <td><input type="radio" name="S13" value="3"></td>
+                <td><input type="radio" name="S13" value="4"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>二、行為規範問題</p>
+
+    <table cellspacing="0" cellpadding="2" id="table_BC" class="common list">
+        <thead>
+            <tr>
+                <th rowspan="2">行為</th>
+                <td colspan="3" class="colspan3">發生次數</td>
+                <td colspan="3" class="colspan3">嚴重程度</td>
+            </tr>
+            <tr>
+                <td>無</td>
+                <td>偶爾</td>
+                <td>經常</td>
+                <td>輕微</td>
+                <td>中度</td>
+                <td>嚴重</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>14. 考......弊</th>
+                <td><input type="radio" name="F14" value="1"></td>
+                <td><input type="radio" name="F14" value="2"></td>
+                <td><input type="radio" name="F14" value="3"></td>
+                <td><input type="radio" name="S14" value="2"></td>
+                <td><input type="radio" name="S14" value="3"></td>
+                <td><input type="radio" name="S14" value="4"></td>
+            </tr>
+            <tr>
+                <th>15. 遲......課</th>
+                <td><input type="radio" name="F15" value="1"></td>
+                <td><input type="radio" name="F15" value="2"></td>
+                <td><input type="radio" name="F15" value="3"></td>
+                <td><input type="radio" name="S15" value="2"></td>
+                <td><input type="radio" name="S15" value="3"></td>
+                <td><input type="radio" name="S15" value="4"></td>
+            </tr>
+            <tr>
+                <th>16. 逃......家</th>
+                <td><input type="radio" name="F16" value="1"></td>
+                <td><input type="radio" name="F16" value="2"></td>
+                <td><input type="radio" name="F16" value="3"></td>
+                <td><input type="radio" name="S16" value="2"></td>
+                <td><input type="radio" name="S16" value="3"></td>
+                <td><input type="radio" name="S16" value="4"></td>
+            </tr>
+            <tr>
+                <th>17. 偷......品</th>
+                <td><input type="radio" name="F17" value="1"></td>
+                <td><input type="radio" name="F17" value="2"></td>
+                <td><input type="radio" name="F17" value="3"></td>
+                <td><input type="radio" name="S17" value="2"></td>
+                <td><input type="radio" name="S17" value="3"></td>
+                <td><input type="radio" name="S17" value="4"></td>
+            </tr>
+            <tr>
+                <th>18. 出......）</th>
+                <td><input type="radio" name="F18" value="1"></td>
+                <td><input type="radio" name="F18" value="2"></td>
+                <td><input type="radio" name="F18" value="3"></td>
+                <td><input type="radio" name="S18" value="2"></td>
+                <td><input type="radio" name="S18" value="3"></td>
+                <td><input type="radio" name="S18" value="4"></td>
+            </tr>
+            <tr>
+                <th>19. 無......品</th>
+                <td><input type="radio" name="F19" value="1"></td>
+                <td><input type="radio" name="F19" value="2"></td>
+                <td><input type="radio" name="F19" value="3"></td>
+                <td><input type="radio" name="S19" value="2"></td>
+                <td><input type="radio" name="S19" value="3"></td>
+                <td><input type="radio" name="S19" value="4"></td>
+            </tr>
+            <tr>
+                <th>20. 上......聲</th>
+                <td><input type="radio" name="F20" value="1"></td>
+                <td><input type="radio" name="F20" value="2"></td>
+                <td><input type="radio" name="F20" value="3"></td>
+                <td><input type="radio" name="S20" value="2"></td>
+                <td><input type="radio" name="S20" value="3"></td>
+                <td><input type="radio" name="S20" value="4"></td>
+            </tr>
+            <tr>
+                <th>21. 在......）</th>
+                <td><input type="radio" name="F21" value="1"></td>
+                <td><input type="radio" name="F21" value="2"></td>
+                <td><input type="radio" name="F21" value="3"></td>
+                <td><input type="radio" name="S21" value="2"></td>
+                <td><input type="radio" name="S21" value="3"></td>
+                <td><input type="radio" name="S21" value="4"></td>
+            </tr>
+            <tr>
+                <th>22. 企......）</th>
+                <td><input type="radio" name="F22" value="1"></td>
+                <td><input type="radio" name="F22" value="2"></td>
+                <td><input type="radio" name="F22" value="3"></td>
+                <td><input type="radio" name="S22" value="2"></td>
+                <td><input type="radio" name="S22" value="3"></td>
+                <td><input type="radio" name="S22" value="4"></td>
+            </tr>
+            <tr>
+                <th>23. 行......）</th>
+                <td><input type="radio" name="F23" value="1"></td>
+                <td><input type="radio" name="F23" value="2"></td>
+                <td><input type="radio" name="F23" value="3"></td>
+                <td><input type="radio" name="S23" value="2"></td>
+                <td><input type="radio" name="S23" value="3"></td>
+                <td><input type="radio" name="S23" value="4"></td>
+            </tr>
+            <tr>
+                <th>24. 不......）</th>
+                <td><input type="radio" name="F24" value="1"></td>
+                <td><input type="radio" name="F24" value="2"></td>
+                <td><input type="radio" name="F24" value="3"></td>
+                <td><input type="radio" name="S24" value="2"></td>
+                <td><input type="radio" name="S24" value="3"></td>
+                <td><input type="radio" name="S24" value="4"></td>
+            </tr>
+            <tr>
+                <th>25. 說......實</th>
+                <td><input type="radio" name="F25" value="1"></td>
+                <td><input type="radio" name="F25" value="2"></td>
+                <td><input type="radio" name="F25" value="3"></td>
+                <td><input type="radio" name="S25" value="2"></td>
+                <td><input type="radio" name="S25" value="3"></td>
+                <td><input type="radio" name="S25" value="4"></td>
+            </tr>
+            <tr>
+                <th>26. 破......）</th>
+                <td><input type="radio" name="F26" value="1"></td>
+                <td><input type="radio" name="F26" value="2"></td>
+                <td><input type="radio" name="F26" value="3"></td>
+                <td><input type="radio" name="S26" value="2"></td>
+                <td><input type="radio" name="S26" value="3"></td>
+                <td><input type="radio" name="S26" value="4"></td>
+            </tr>
+            <tr>
+                <th>27. 在......）</th>
+                <td><input type="radio" name="F27" value="1"></td>
+                <td><input type="radio" name="F27" value="2"></td>
+                <td><input type="radio" name="F27" value="3"></td>
+                <td><input type="radio" name="S27" value="2"></td>
+                <td><input type="radio" name="S27" value="3"></td>
+                <td><input type="radio" name="S27" value="4"></td>
+            </tr>
+            <tr>
+                <th>28. 過......應</th>
+                <td><input type="radio" name="F28" value="1"></td>
+                <td><input type="radio" name="F28" value="2"></td>
+                <td><input type="radio" name="F28" value="3"></td>
+                <td><input type="radio" name="S28" value="2"></td>
+                <td><input type="radio" name="S28" value="3"></td>
+                <td><input type="radio" name="S28" value="4"></td>
+            </tr>
+            <tr>
+                <th>29. 個......）</th>
+                <td><input type="radio" name="F29" value="1"></td>
+                <td><input type="radio" name="F29" value="2"></td>
+                <td><input type="radio" name="F29" value="3"></td>
+                <td><input type="radio" name="S29" value="2"></td>
+                <td><input type="radio" name="S29" value="3"></td>
+                <td><input type="radio" name="S29" value="4"></td>
+            </tr>
+            <tr>
+                <th>30. 在......）</th>
+                <td><input type="radio" name="F30" value="1"></td>
+                <td><input type="radio" name="F30" value="2"></td>
+                <td><input type="radio" name="F30" value="3"></td>
+                <td><input type="radio" name="S30" value="2"></td>
+                <td><input type="radio" name="S30" value="3"></td>
+                <td><input type="radio" name="S30" value="4"></td>
+            </tr>
+            <tr>
+                <th>31. 不......）</th>
+                <td><input type="radio" name="F31" value="1"></td>
+                <td><input type="radio" name="F31" value="2"></td>
+                <td><input type="radio" name="F31" value="3"></td>
+                <td><input type="radio" name="S31" value="2"></td>
+                <td><input type="radio" name="S31" value="3"></td>
+                <td><input type="radio" name="S31" value="4"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>三、憂鬱情緒問題</p>
+    
+    <table cellspacing="0" cellpadding="2" id="table_DM" class="common list">
+        <thead>
+            <tr>
+                <th rowspan="2">行為</th>
+                <td colspan="3" class="colspan3">發生次數</td>
+                <td colspan="3" class="colspan3">嚴重程度</td>
+            </tr>
+            <tr>
+                <td>無</td>
+                <td>偶爾</td>
+                <td>經常</td>
+                <td>輕微</td>
+                <td>中度</td>
+                <td>嚴重</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>32. 因......題</th>
+                <td><input type="radio" name="F32" value="1"></td>
+                <td><input type="radio" name="F32" value="2"></td>
+                <td><input type="radio" name="F32" value="3"></td>
+                <td><input type="radio" name="S32" value="2"></td>
+                <td><input type="radio" name="S32" value="3"></td>
+                <td><input type="radio" name="S32" value="4"></td>
+            </tr>
+            <tr>
+                <th>33. 別......）</th>
+                <td><input type="radio" name="F33" value="1"></td>
+                <td><input type="radio" name="F33" value="2"></td>
+                <td><input type="radio" name="F33" value="3"></td>
+                <td><input type="radio" name="S33" value="2"></td>
+                <td><input type="radio" name="S33" value="3"></td>
+                <td><input type="radio" name="S33" value="4"></td>
+            </tr>
+            <tr>
+                <th>34. 當......樂</th>
+                <td><input type="radio" name="F34" value="1"></td>
+                <td><input type="radio" name="F34" value="2"></td>
+                <td><input type="radio" name="F34" value="3"></td>
+                <td><input type="radio" name="S34" value="2"></td>
+                <td><input type="radio" name="S34" value="3"></td>
+                <td><input type="radio" name="S34" value="4"></td>
+            </tr>
+            <tr>
+                <th>35. 表......）</th>
+                <td><input type="radio" name="F35" value="1"></td>
+                <td><input type="radio" name="F35" value="2"></td>
+                <td><input type="radio" name="F35" value="3"></td>
+                <td><input type="radio" name="S35" value="2"></td>
+                <td><input type="radio" name="S35" value="3"></td>
+                <td><input type="radio" name="S35" value="4"></td>
+            </tr>
+            <tr>
+                <th>36. 認......等</th>
+                <td><input type="radio" name="F36" value="1"></td>
+                <td><input type="radio" name="F36" value="2"></td>
+                <td><input type="radio" name="F36" value="3"></td>
+                <td><input type="radio" name="S36" value="2"></td>
+                <td><input type="radio" name="S36" value="3"></td>
+                <td><input type="radio" name="S36" value="4"></td>
+            </tr>
+            <tr>
+                <th>37. 不......樣</th>
+                <td><input type="radio" name="F37" value="1"></td>
+                <td><input type="radio" name="F37" value="2"></td>
+                <td><input type="radio" name="F37" value="3"></td>
+                <td><input type="radio" name="S37" value="2"></td>
+                <td><input type="radio" name="S37" value="3"></td>
+                <td><input type="radio" name="S37" value="4"></td>
+            </tr>
+            <tr>
+                <th>38. 對......趣</th>
+                <td><input type="radio" name="F38" value="1"></td>
+                <td><input type="radio" name="F38" value="2"></td>
+                <td><input type="radio" name="F38" value="3"></td>
+                <td><input type="radio" name="S38" value="2"></td>
+                <td><input type="radio" name="S38" value="3"></td>
+                <td><input type="radio" name="S38" value="4"></td>
+            </tr>
+            <tr>
+                <th>39. 對......）</th>
+                <td><input type="radio" name="F39" value="1"></td>
+                <td><input type="radio" name="F39" value="2"></td>
+                <td><input type="radio" name="F39" value="3"></td>
+                <td><input type="radio" name="S39" value="2"></td>
+                <td><input type="radio" name="S39" value="3"></td>
+                <td><input type="radio" name="S39" value="4"></td>
+            </tr>
+            <tr>
+                <th>40. 悲......）</th>
+                <td><input type="radio" name="F40" value="1"></td>
+                <td><input type="radio" name="F40" value="2"></td>
+                <td><input type="radio" name="F40" value="3"></td>
+                <td><input type="radio" name="S40" value="2"></td>
+                <td><input type="radio" name="S40" value="3"></td>
+                <td><input type="radio" name="S40" value="4"></td>
+            </tr>
+            <tr>
+                <th>41. 易......抗</th>
+                <td><input type="radio" name="F41" value="1"></td>
+                <td><input type="radio" name="F41" value="2"></td>
+                <td><input type="radio" name="F41" value="3"></td>
+                <td><input type="radio" name="S41" value="2"></td>
+                <td><input type="radio" name="S41" value="3"></td>
+                <td><input type="radio" name="S41" value="4"></td>
+            </tr>
+            <tr>
+                <th>42. 膽......言</th>
+                <td><input type="radio" name="F42" value="1"></td>
+                <td><input type="radio" name="F42" value="2"></td>
+                <td><input type="radio" name="F42" value="3"></td>
+                <td><input type="radio" name="S42" value="2"></td>
+                <td><input type="radio" name="S42" value="3"></td>
+                <td><input type="radio" name="S42" value="4"></td>
+            </tr>
+            <tr>
+                <th>43. 表......）</th>
+                <td><input type="radio" name="F43" value="1"></td>
+                <td><input type="radio" name="F43" value="2"></td>
+                <td><input type="radio" name="F43" value="3"></td>
+                <td><input type="radio" name="S43" value="2"></td>
+                <td><input type="radio" name="S43" value="3"></td>
+                <td><input type="radio" name="S43" value="4"></td>
+            </tr>
+            <tr>
+                <th>44. 表......）</th>
+                <td><input type="radio" name="F44" value="1"></td>
+                <td><input type="radio" name="F44" value="2"></td>
+                <td><input type="radio" name="F44" value="3"></td>
+                <td><input type="radio" name="S44" value="2"></td>
+                <td><input type="radio" name="S44" value="3"></td>
+                <td><input type="radio" name="S44" value="4"></td>
+            </tr>
+            <tr>
+                <th>45. 故......）</th>
+                <td><input type="radio" name="F45" value="1"></td>
+                <td><input type="radio" name="F45" value="2"></td>
+                <td><input type="radio" name="F45" value="3"></td>
+                <td><input type="radio" name="S45" value="2"></td>
+                <td><input type="radio" name="S45" value="3"></td>
+                <td><input type="radio" name="S45" value="4"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>四、焦慮情緒問題</p>
+    
+    <table cellspacing="0" cellpadding="2" id="table_AX" class="common list">
+        <thead>
+            <tr>
+                <th rowspan="2">行為</th>
+                <td colspan="3" class="colspan3">發生次數</td>
+                <td colspan="3" class="colspan3">嚴重程度</td>
+            </tr>
+            <tr>
+                <td>無</td>
+                <td>偶爾</td>
+                <td>經常</td>
+                <td>輕微</td>
+                <td>中度</td>
+                <td>嚴重</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>46. 身......）</th>
+                <td><input type="radio" name="F46" value="1"></td>
+                <td><input type="radio" name="F46" value="2"></td>
+                <td><input type="radio" name="F46" value="3"></td>
+                <td><input type="radio" name="S46" value="2"></td>
+                <td><input type="radio" name="S46" value="3"></td>
+                <td><input type="radio" name="S46" value="4"></td>
+            </tr>
+            <tr>
+                <th>47. 有......）</th>
+                <td><input type="radio" name="F47" value="1"></td>
+                <td><input type="radio" name="F47" value="2"></td>
+                <td><input type="radio" name="F47" value="3"></td>
+                <td><input type="radio" name="S47" value="2"></td>
+                <td><input type="radio" name="S47" value="3"></td>
+                <td><input type="radio" name="S47" value="4"></td>
+            </tr>
+            <tr>
+                <th>48. 在......識</th>
+                <td><input type="radio" name="F48" value="1"></td>
+                <td><input type="radio" name="F48" value="2"></td>
+                <td><input type="radio" name="F48" value="3"></td>
+                <td><input type="radio" name="S48" value="2"></td>
+                <td><input type="radio" name="S48" value="3"></td>
+                <td><input type="radio" name="S48" value="4"></td>
+            </tr>
+            <tr>
+                <th>49. 過......）</th>
+                <td><input type="radio" name="F49" value="1"></td>
+                <td><input type="radio" name="F49" value="2"></td>
+                <td><input type="radio" name="F49" value="3"></td>
+                <td><input type="radio" name="S49" value="2"></td>
+                <td><input type="radio" name="S49" value="3"></td>
+                <td><input type="radio" name="S49" value="4"></td>
+            </tr>
+            <tr>
+                <th>50. 坐......）</th>
+                <td><input type="radio" name="F50" value="1"></td>
+                <td><input type="radio" name="F50" value="2"></td>
+                <td><input type="radio" name="F50" value="3"></td>
+                <td><input type="radio" name="S50" value="2"></td>
+                <td><input type="radio" name="S50" value="3"></td>
+                <td><input type="radio" name="S50" value="4"></td>
+            </tr>
+            <tr>
+                <th>51. 表......）</th>
+                <td><input type="radio" name="F51" value="1"></td>
+                <td><input type="radio" name="F51" value="2"></td>
+                <td><input type="radio" name="F51" value="3"></td>
+                <td><input type="radio" name="S51" value="2"></td>
+                <td><input type="radio" name="S51" value="3"></td>
+                <td><input type="radio" name="S51" value="4"></td>
+            </tr>
+            <tr>
+                <th>52. 訴......因</th>
+                <td><input type="radio" name="F52" value="1"></td>
+                <td><input type="radio" name="F52" value="2"></td>
+                <td><input type="radio" name="F52" value="3"></td>
+                <td><input type="radio" name="S52" value="2"></td>
+                <td><input type="radio" name="S52" value="3"></td>
+                <td><input type="radio" name="S52" value="4"></td>
+            </tr>
+            <tr>
+                <th>53. 懷......話</th>
+                <td><input type="radio" name="F53" value="1"></td>
+                <td><input type="radio" name="F53" value="2"></td>
+                <td><input type="radio" name="F53" value="3"></td>
+                <td><input type="radio" name="S53" value="2"></td>
+                <td><input type="radio" name="S53" value="3"></td>
+                <td><input type="radio" name="S53" value="4"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>五、偏畸習癖</p>
+    
+    <table cellspacing="0" cellpadding="2" id="table_AH" class="common list">
+        <thead>
+            <tr>
+                <th rowspan="2">行為</th>
+                <td colspan="3" class="colspan3">發生次數</td>
+                <td colspan="3" class="colspan3">嚴重程度</td>
+            </tr>
+            <tr>
+                <td>無</td>
+                <td>偶爾</td>
+                <td>經常</td>
+                <td>輕微</td>
+                <td>中度</td>
+                <td>嚴重</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>54. 吸......指</th>
+                <td><input type="radio" name="F54" value="1"></td>
+                <td><input type="radio" name="F54" value="2"></td>
+                <td><input type="radio" name="F54" value="3"></td>
+                <td><input type="radio" name="S54" value="2"></td>
+                <td><input type="radio" name="S54" value="3"></td>
+                <td><input type="radio" name="S54" value="4"></td>
+            </tr>
+            <tr>
+                <th>55. 過......癖</th>
+                <td><input type="radio" name="F55" value="1"></td>
+                <td><input type="radio" name="F55" value="2"></td>
+                <td><input type="radio" name="F55" value="3"></td>
+                <td><input type="radio" name="S55" value="2"></td>
+                <td><input type="radio" name="S55" value="3"></td>
+                <td><input type="radio" name="S55" value="4"></td>
+            </tr>
+            <tr>
+                <th>56. 身......）</th>
+                <td><input type="radio" name="F56" value="1"></td>
+                <td><input type="radio" name="F56" value="2"></td>
+                <td><input type="radio" name="F56" value="3"></td>
+                <td><input type="radio" name="S56" value="2"></td>
+                <td><input type="radio" name="S56" value="3"></td>
+                <td><input type="radio" name="S56" value="4"></td>
+            </tr>
+            <tr>
+                <th>57. 奇......扮</th>
+                <td><input type="radio" name="F57" value="1"></td>
+                <td><input type="radio" name="F57" value="2"></td>
+                <td><input type="radio" name="F57" value="3"></td>
+                <td><input type="radio" name="S57" value="2"></td>
+                <td><input type="radio" name="S57" value="3"></td>
+                <td><input type="radio" name="S57" value="4"></td>
+            </tr>
+            <tr>
+                <th>58. 吸......煙</th>
+                <td><input type="radio" name="F58" value="1"></td>
+                <td><input type="radio" name="F58" value="2"></td>
+                <td><input type="radio" name="F58" value="3"></td>
+                <td><input type="radio" name="S58" value="2"></td>
+                <td><input type="radio" name="S58" value="3"></td>
+                <td><input type="radio" name="S58" value="4"></td>
+            </tr>
+            <tr>
+                <th>59. 飲......酒</th>
+                <td><input type="radio" name="F59" value="1"></td>
+                <td><input type="radio" name="F59" value="2"></td>
+                <td><input type="radio" name="F59" value="3"></td>
+                <td><input type="radio" name="S59" value="2"></td>
+                <td><input type="radio" name="S59" value="3"></td>
+                <td><input type="radio" name="S59" value="4"></td>
+            </tr>
+            <tr>
+                <th>60. 吸......）</th>
+                <td><input type="radio" name="F60" value="1"></td>
+                <td><input type="radio" name="F60" value="2"></td>
+                <td><input type="radio" name="F60" value="3"></td>
+                <td><input type="radio" name="S60" value="2"></td>
+                <td><input type="radio" name="S60" value="3"></td>
+                <td><input type="radio" name="S60" value="4"></td>
+            </tr>
+            <tr>
+                <th>61. 性......）</th>
+                <td><input type="radio" name="F61" value="1"></td>
+                <td><input type="radio" name="F61" value="2"></td>
+                <td><input type="radio" name="F61" value="3"></td>
+                <td><input type="radio" name="S61" value="2"></td>
+                <td><input type="radio" name="S61" value="3"></td>
+                <td><input type="radio" name="S61" value="4"></td>
+            </tr>
+            <tr>
+                <th>62. 過......食</th>
+                <td><input type="radio" name="F62" value="1"></td>
+                <td><input type="radio" name="F62" value="2"></td>
+                <td><input type="radio" name="F62" value="3"></td>
+                <td><input type="radio" name="S62" value="2"></td>
+                <td><input type="radio" name="S62" value="3"></td>
+                <td><input type="radio" name="S62" value="4"></td>
+            </tr>
+            <tr>
+                <th>63. 厭......食</th>
+                <td><input type="radio" name="F63" value="1"></td>
+                <td><input type="radio" name="F63" value="2"></td>
+                <td><input type="radio" name="F63" value="3"></td>
+                <td><input type="radio" name="S63" value="2"></td>
+                <td><input type="radio" name="S63" value="3"></td>
+                <td><input type="radio" name="S63" value="4"></td>
+            </tr>
+            <tr>
+                <th>64. 貪......）</th>
+                <td><input type="radio" name="F64" value="1"></td>
+                <td><input type="radio" name="F64" value="2"></td>
+                <td><input type="radio" name="F64" value="3"></td>
+                <td><input type="radio" name="S64" value="2"></td>
+                <td><input type="radio" name="S64" value="3"></td>
+                <td><input type="radio" name="S64" value="4"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="result_wrapper" class="fixed">
+
+        <table width="250" id="table_result" class="common list">
+            <thead>
+                <tr>
+                    <th>項目</th>
+                    <td>原始<br>分數</td>
+                    <td>異常<br>程度</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>人際關係</th>
+                    <td id="C_RP"></td>
+                    <td id="S_RP"></td>
+                </tr>
+                <tr>
+                    <th>行為規範</th>
+                    <td id="C_BC"></td>
+                    <td id="S_BC"></td>
+                </tr>
+                <tr>
+                    <th>憂鬱情緒</th>
+                    <td id="C_DM"></td>
+                    <td id="S_DM"></td>
+                </tr>
+                <tr>
+                    <th>焦慮情緒</th>
+                    <td id="C_AX"></td>
+                    <td id="S_AX"></td>
+                </tr>
+                <tr>
+                    <th>偏畸習癖</th>
+                    <td id="C_AH"></td>
+                    <td id="S_AH"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="0" width="250" id="buttons"  class="common">
+            <tr>
+                <td><input type="button" value="計算" onclick="Calculate();"></td>
+                <td><input type="button" value="修改" onclick="Modify();"></td>
+                <td><input type="button" value="全部清除" onclick="Clear();"></td>
+                <td><input type="button" value="說明" onclick="Explanation();"></td>
+            </tr>
+        </table>
+    
+    </div>
+
+</body>
+</html>

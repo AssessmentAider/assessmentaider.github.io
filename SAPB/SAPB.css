@@ -1,0 +1,29 @@
+
+/* 表格共同部分 */
+.common thead {border: 1px solid #FFFFFF;}
+.common th {width: 150px;}
+.common td {width: 50px;}
+.common thead {background-color: #808080; color: #FFFFFF; text-align: center; font-weight: bold;}
+.common thead .colspan3 {width: 150px;}
+.common thead th {border: 1px solid #FFFFFF;}
+.common thead td {border: 1px solid #FFFFFF;}
+.common tbody th {text-align: left;}
+.common tbody td {text-align: center;}
+
+/* 表格隨著滑鼠移動有變色效果、底虛線 */
+.list tbody tr:hover {background-color: #FFEFD5;}
+.list tbody th {border-bottom: 1px dashed #000000;}
+.list tbody td {border-bottom: 1px dashed #000000;}
+
+/* 分數統計表 */
+#table_result {background-color: #FFFFFF;}
+#table_result .severe {background-color: #FF6699;}
+#table_result .moderate {background-color: #FFCC66;}
+#table_result .mild {background-color: #FFFF33;}
+
+/* 按鈕 */
+#buttons {text-align: center;}
+
+/* 浮動區塊 */
+#result_wrapper {position: absolute;}
+#result_wrapper.fixed {position: fixed; top: 0; right: 0;}

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>[西北語句構成測驗] 評量結果計算</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="NSST.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="NSST_Data.js"></script>
+    <script type="text/javascript" src="NSST_UI.js"></script>
+</head>
+<body>
+
+    學生年級：
+    <select id="TableSelect">
+        <option value="1">一年級</option>
+        <option value="2">二年級</option>
+    </select>
+
+    <table cellspacing="0" cellpadding="2" id="table1" class="common list">
+        <thead>
+            <tr>
+                <th>分測驗</th>
+                <td>原始成績</td>
+                <td>百分等級</td>
+                <td>解釋</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="Acceptance">
+                <th>接受性</th>
+                <td><input type="text" id="Acceptance_Score" class="clsOriginal" /></td>
+                <td id="Acceptance_Percentile"></td>
+                <td id="Acceptance_Explain"></td>
+            </tr>
+            <tr id="Expressive">
+                <th>表達性</th>
+                <td><input type="text" id="Expressive_Score" class="clsOriginal" /></td>
+                <td id="Expressive_Percentile"></td>
+                <td id="Expressive_Explain"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table border="0" id="buttons"  class="common">
+        <tr>
+            <td><input type="button" value="計算" onclick="Calculate();"></td>
+            <td><input type="button" value="修改" onclick="Modify();"></td>
+            <td><input type="button" value="全部清除" onclick="Clear();"></td>
+            <td><input type="button" value="說明" onclick="Explanation();"></td>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>[問題行為篩選量表] 評量結果計算</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="SSBP.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="SSBP_Data.js"></script>
+    <script type="text/javascript" src="SSBP_UI.js"></script>
+</head>
+<body>
+
+    <p>
+        身分：
+        <select id="IdentitySelect" onchange="Update();">
+            <option value="0">教師</option>
+            <option value="1">家長</option>
+        </select>
+    </p>
+
+    <p>
+        年級區段：
+        <select id="GradeSelect" onchange="Update();">
+            <option value="1">年段一 (小一 ~ 小三)</option>
+            <option value="2">年段二 (小四 ~ 小六)</option>
+            <option value="3">年段三 (國一 ~ 國三)</option>
+        </select>
+    </p>    
+    
+    <p class="part_1">一、注意力缺陷過動症(ADHD)行為</p>
+
+    <table cellspacing="0" cellpadding="2" id="table_1" class="part_1 common list">
+        <thead>
+            <tr>
+                <td>行為</td>
+                <td>總是<br>這樣</td>
+                <td>經常<br>這樣</td>
+                <td>有時<br>這樣</td>
+                <td>很少<br>這樣</td>
+                <td>從不<br>這樣</td>
+                <td id="score_1" class="score"></td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <p class="part_2">二、功能受損</p>
+
+    <table cellspacing="0" cellpadding="2" id="table_2" class="part_2 common list">
+        <thead>
+            <tr>
+                <td>行為</td>
+                <td>總是<br>這樣</td>
+                <td>經常<br>這樣</td>
+                <td>有時<br>這樣</td>
+                <td>很少<br>這樣</td>
+                <td>從不<br>這樣</td>
+                <td id="score_2" class="score"></td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <p class="part_3">三、對立性違抗行為</p>
+
+    <table cellspacing="0" cellpadding="2" id="table_3" class="part_3 common list">
+        <thead>
+            <tr>
+                <td>行為</td>
+                <td>總是<br>這樣</td>
+                <td>經常<br>這樣</td>
+                <td>有時<br>這樣</td>
+                <td>很少<br>這樣</td>
+                <td>從不<br>這樣</td>
+                <td id="score_3" class="score"></td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <p class="part_4">四、違規行為</p>
+
+    <table cellspacing="0" cellpadding="2" id="table_4" class="part_4 common list">
+        <thead>
+            <tr>
+                <td>行為</td>
+                <td>總是<br>這樣</td>
+                <td>經常<br>這樣</td>
+                <td>有時<br>這樣</td>
+                <td>很少<br>這樣</td>
+                <td>從不<br>這樣</td>
+                <td id="score_4" class="score"></td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <p class="part_5">五、違規行為(二)</p>
+
+    <table cellspacing="0" cellpadding="2" id="table_5" class="part_5 common list">
+        <thead>
+            <tr>
+                <th>行為</th>
+                <td>是</td>
+                <td>否</td>
+                <td>不知道</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="result_wrapper" class="fixed">
+
+        <table width="600" id="table_result" class="common list">
+            <thead>
+                <tr>
+                    <th rowspan="2">評量者</th>
+                    <td colspan="5">ADHD類型(伍擇一)</td>
+                    <td colspan="2">功能受損</td>
+                    <td colspan="2">對立違抗</td>
+                    <td colspan="2">違規行為</td>
+                </tr>
+                <tr>
+                    <td>不專<br>注型</td>
+                    <td style="width: 75px;">過動及<br>衝動型</td>
+                    <td style="width: 75px;">綜合型</td>
+                    <td>未特<br>定型</td>
+                    <td>皆不<br>符合</td>
+                    <td>是</td>
+                    <td>否</td>
+                    <td>是</td>
+                    <td>否</td>
+                    <td>是</td>
+                    <td>否</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="0" width="600" id="buttons"  class="common">
+            <tr>
+                <td><input type="button" value="計算" onclick="Calculate();"></td>
+                <td><input type="button" value="修改" onclick="Modify();"></td>
+                <td><input type="button" value="全部清除" onclick="Clear();"></td>
+                <td><input type="button" value="說明" onclick="Explanation();"></td>
+            </tr>
+        </table>
+    
+    </div>
+
+</body>
+</html>

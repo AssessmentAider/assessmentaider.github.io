@@ -1,0 +1,20 @@
+
+/* 表格共同部分 */
+.common {width: 600px;}
+.common th {width: 150px;}
+.common td {width: 150px;}
+.common thead {background-color: #808080; color: #FFFFFF; text-align: center; font-weight: bold;}
+.common tbody th {text-align: left;}
+.common tbody td {text-align: center;}
+
+/* 表格隨著滑鼠移動有變色效果、底虛線 */
+.list tbody tr:hover {background-color: #FFEFD5;}
+.list tbody th {border-bottom: 1px dashed #000000;}
+.list tbody td {border-bottom: 1px dashed #000000;}
+
+/* 原始成績 */
+.clsOriginal {width: 75px;}
+
+/* 著色 */
+#table1 .danger {background-color: #FF6699;}
+#table1 .suspected {background-color: #FFCC66;}

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>[特殊需求轉介表 (100R)] 評量結果計算</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="100R.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="100R_Data.js"></script>
+    <script type="text/javascript" src="100R_UI.js"></script>
+</head>
+<body>
+
+    <div id="question_wrapper">
+    </div>
+
+    <div id="result_wrapper" class="fixed">
+
+        <table id="table_result" class="common list">
+            <thead>
+                <tr>
+                    <th>項目</th>
+                    <td>題數</td>
+                    <td>總分</td>
+                    <td>得分</td>
+                    <td>切截分數</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <table border="0" id="buttons" class="common">
+            <tr>
+                <td><input type="button" value="計算" onclick="Calculate();"></td>
+                <td><input type="button" value="修改" onclick="Modify();"></td>
+                <td><input type="button" value="全部清除" onclick="Clear();"></td>
+                <td><input type="button" value="說明" onclick="Explanation();"></td>
+            </tr>
+        </table>
+    
+    </div>
+
+</body>
+</html>
